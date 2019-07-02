@@ -12,12 +12,13 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component'
-
+import {CommonModule} from '@angular/common';
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    CommonModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent},
